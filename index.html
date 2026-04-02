@@ -101,16 +101,16 @@ body {
 /* ── STEP CARDS ── */
 .step-card {
   pointer-events: auto;
-  max-width: 420px;
+  max-width: 340px;
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 2rem 2.2rem;
+  border-radius: 6px;
+  padding: 1.4rem 1.6rem;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
               transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.06);
 }
 
 .step-card.visible {
@@ -119,33 +119,33 @@ body {
 }
 
 .step-card.step-intro {
-  max-width: 460px;
+  max-width: 360px;
 }
 
 .step-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.58rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   color: var(--accent);
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .step-title {
   font-family: var(--font-serif);
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.2;
   color: var(--near-black);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .step-body {
   font-family: var(--font-sans);
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   font-weight: 300;
-  line-height: 1.75;
+  line-height: 1.65;
   color: var(--dark-gray);
 }
 
@@ -173,7 +173,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  margin-top: 1.2rem;
+  margin-top: 0.8rem;
   font-family: var(--font-mono);
   font-size: 0.65rem;
   text-transform: uppercase;
@@ -198,16 +198,16 @@ body {
 /* ── LEGEND ── */
 .map-legend {
   position: fixed;
-  top: 80px;
+  top: 16px;
   right: 16px;
   z-index: 20;
-  width: 260px;
+  width: 200px;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 6px;
   overflow: hidden;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   opacity: 0;
   transform: translateX(100%);
@@ -225,13 +225,13 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 0.75rem;
   border: none;
   border-bottom: 1px solid var(--border);
   background: var(--off-white);
   cursor: pointer;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -251,10 +251,10 @@ body {
 }
 
 .legend-item {
-  padding: 0.5rem 1rem;
+  padding: 0.35rem 0.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.2rem;
   transition: padding 0.3s ease;
 }
 
@@ -262,7 +262,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-size: 0.68rem;
+  font-size: 0.58rem;
 }
 
 .legend-item .detail {
@@ -279,7 +279,7 @@ body {
 }
 
 .legend-items.expanded .legend-item {
-  padding: 0.65rem 1rem;
+  padding: 0.45rem 0.75rem;
 }
 
 .legend-items.expanded .detail {
@@ -296,7 +296,7 @@ body {
 
 /* ── EXPLORE CARD ── */
 .step-card.step-explore {
-  max-width: 440px;
+  max-width: 360px;
   position: sticky;
   top: 60px;
 }
@@ -389,15 +389,15 @@ body {
 @media (max-width: 768px) {
   .step-card {
     max-width: 100%;
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
   .step-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .map-legend {
-    width: 220px;
+    width: 170px;
     right: 8px;
-    top: 70px;
+    top: 12px;
   }
 }
 </style>
@@ -436,8 +436,8 @@ body {
     <div class="scroll-step" data-step="0">
       <div class="step-card step-intro">
         <div class="step-eyebrow">Rent Data Explorer</div>
-        <h2 class="step-title">Mapping America's Rent Data Gaps</h2>
-        <p class="step-body">Using the two most widely available public data sources — the <strong>Zillow Observed Rent Index</strong> and the <strong>American Community Survey</strong> — we can visualize where rent estimates agree, diverge, or are missing entirely across the United States.</p>
+        <h2 class="step-title">Mapping the Bay Area's Rent Data Gaps</h2>
+        <p class="step-body">Using the two most widely available public data sources — the <strong>Zillow Observed Rent Index</strong> and the <strong>American Community Survey</strong> — we can visualize where rent estimates agree, diverge, or are missing entirely across the Bay Area.</p>
         <div class="step-scroll-cue"><div class="scroll-arrow"></div>Scroll to explore</div>
       </div>
     </div>
